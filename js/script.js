@@ -36,7 +36,7 @@ window.onload = () => {
     }
 }
 
-
+// search in chatgpt for explantion
 document.querySelector('.home').onmousemove = (e) => {
 
     document.querySelectorAll('.home-parallax').forEach(element => {
