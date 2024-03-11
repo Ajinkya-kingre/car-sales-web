@@ -32,6 +32,36 @@
         <button type="button" class="btn">login</button>
         <i class="fa-regular fa-user"></i>
       </div>
+      <!-- Add the signup button here -->
+      <div>
+        <button id="signup-btn">
+          <i class="fas fa-user-plus"></i> Sign Up
+        </button>
+      </div>
+      <!-- Add an empty div for the signup form -->
+      <div class="signup-form-container">
+        <div class="signup-form">
+          <button id="close-signup-btn">&times;</button>
+          <h3>Sign Up</h3>
+          <form id="signup-form">
+            <div class="box">
+              <input
+                type="text"
+                id="signup-username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="box">
+              <input type="email" id="signup-email" placeholder="Email" required />
+            </div>
+            <div class="box">
+              <input type="password"  id="signup-password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
     </header>
     <!-- header section ends -->
 
@@ -280,146 +310,7 @@
     </section>
     <!-- services section end -->
 
-    <!-- featured section starts -->
-    <section class="featured" id="featured">
-      <h1 class="heading"><span>featured</span> cars</h1>
 
-      <div class="featured-slider">
-        <div class="featured-wrapper">
-          <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
-
-          <div class="featured-wrapper2">
-            <div class="featured-wrapper-box">
-              <div class="box active">
-                <img src="./image/car7.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car8.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car9.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car10.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car11.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car12.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car13.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-
-              <div class="box">
-                <img src="./image/car14.png" alt="" />
-                <h3>new model</h3>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <div class="price">Rs. 1,500,000</div>
-                <a href="#" class="btn">check out</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
-        </div>
-
-        <div class="fActCircle">
-          <div class="fa-regular fa-solid fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-          <div class="fa-regular fa-circle"></div>
-        </div>
-      </div>
-    </section>
-    <!-- featured section end -->
 
     <!-- subscribe section starts -->
     <section class="subscribe">

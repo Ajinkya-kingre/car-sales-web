@@ -14,6 +14,42 @@ document.querySelector('#close-login-btn').onclick = () => {
     document.querySelector('.login-form-container').classList.remove('active');
 }
 
+document.querySelector('.login-form-container form').onsubmit = (event) => {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Here you can add code to handle the login form submission
+    // For example, you can collect the form data and send it to a server for authentication
+    // Once authenticated, you can redirect the user to the desired page
+
+    console.log('Login form submitted!');
+}
+
+// Select the signup button and signup form container
+const signupBtn = document.getElementById('signup-btn');
+const signupFormContainer = document.querySelector('.signup-form-container');
+
+// Add event listener to the signup button
+signupBtn.addEventListener('click', () => {
+    // Toggle the active class on the signup form container
+    signupFormContainer.classList.toggle('active');
+});
+
+// Close the signup form when the close button is clicked
+document.querySelector('#close-signup-btn').onclick = () => {
+    signupFormContainer.classList.remove('active');
+};
+
+document.querySelector('.signup-form-container form').onsubmit = (event) => {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Here you can add code to handle the signup form submission
+    // For example, you can collect the form data and send it to a server to create a new user account
+    // After successful account creation, you can redirect the user to the login page or any other page
+
+    console.log('Sign up form submitted!');
+}
+
+
 
 window.onscroll = () => {
 
@@ -202,3 +238,37 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     });
 });
+
+
+// signup submit
+// Function to sign up a user
+function signUpUser(userData) {
+    // Construct the request body
+    const requestBody = JSON.stringify(userData);
+
+    // Make a POST request to the signup endpoint
+    fetch('https://job.ltr-soft.com/User_Detail/user_insert.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: requestBody
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Handle the response data
+        console.log(data);
+        // You can do something with the response data here, such as showing a success message to the user
+    })
+    .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the request:', error);
+        // You can display an error message to the user or perform other error handling actions
+    });
+}
+
